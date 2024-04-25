@@ -28,3 +28,18 @@ def get_synopsys_txt(movie: Movie) -> str:
     return movie.synopsis
 
 # def ...
+
+def future_version2 (movie: Movie) -> str:
+    movies2 = movie.synopsis.replace("(FILMAFINITY)","")
+    
+    return movies2
+
+def future_version3 (movie: Movie) -> str:
+    movies2 = movie.synopsis.replace("(FILMAFINITY)", "")
+    movies2 = movies2 + movie.genre_tags
+    
+    return movies2
+
+
+
+    
